@@ -8,11 +8,16 @@ class BreedList extends React.Component {
     }
 
     render(){
+        console.log(this.props.breeds)
         return <div>BreedList</div>
     }
 }
 
+const mapStateToProps = (state) => {
+    return {breeds: state.breeds}
+}
+
 export default connect(
-    null,
+    mapStateToProps,
     {fetchBreeds}
 ) (BreedList);
