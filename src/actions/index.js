@@ -5,3 +5,5 @@ export const fetchBreeds = () => async dispatch => {
 
     dispatch({type: 'FETCH_BREEDS', payload: response.data.message})
 };
+
+//Al lanzar la action de fetchBreeds, lanzar 1 para cada breed del Array que devuelve la API
