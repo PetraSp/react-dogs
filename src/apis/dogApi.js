@@ -1,5 +1,15 @@
 import axios from 'axios';
 
-export default axios.create({
-    baseURL: 'https://dog.ceo/api/breeds/list/all'
+const dogApi = axios.create({
+    baseURL: 'https://dog.ceo/api/'
 });
+
+const getAllBreeds = () => dogApi.get('/breeds/list/all');
+
+const getBreedImages = (breed) => dogApi.get(`/breed/${breed}/images`);
+
+export {
+    getAllBreeds,
+    getBreedImages
+}
+

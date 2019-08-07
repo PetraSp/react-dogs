@@ -42,5 +42,5 @@ export default (state = initialState, action) => {
 // Crear el state relativo a la action FETCH_BREED_IMAGES en el reducer,
 // haciendo que actualice el array de images y imgCount
 
-// Una vez todo` eso funciona a nivel de requests y state en Redux
+// Una vez todo eso todo eso funciona a nivel de requests y state en Redux
 // vamos al componente de BreedList y conectamos un selector nuevo para coger las imágenes del state de Redux
